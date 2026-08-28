@@ -30,6 +30,10 @@ Slides/      decks das aulas
 | [Demo 1](Notebooks/Demo1_URL_Classifier.ipynb) | Classificação de URL potencialmente maliciosa | Aprendizado supervisionado, TF-IDF, regressão logística, holdout, acurácia, baseline |
 | [Demo 2](Notebooks/Demo2_Fraud_Detection.ipynb) | Detecção de fraude em pagamentos | Vazamento de alvo, matriz de confusão, precisão, recall, F1, desbalanceamento, trade-off precisão/recall |
 | [Demo 3](Notebooks/Demo3_Comparacao_Metricas.ipynb) | Comparação de métricas de regressão | Regressão linear, MAE, MSE, RMSE, MAPE, R², R² ajustado, validação cruzada com K-pastas |
+| [Demo 3.5](Notebooks/Demo3_5_Time_Series_Call_Center_Forecast.ipynb) | Introdução a séries temporais (call center) | Tendência, sazonalidade, features temporais, divisão treino/teste respeitando o tempo, baseline |
+| [Demo 4](Notebooks/Demo4_Fraud_Detection.ipynb) | Classificação de fraude em pagamentos | Aprendizagem supervisionada, regressão logística, árvore de decisão, acurácia, precisão, recall |
+| [Demo 5](Notebooks/Demo5_Kmeans_Mall_Customers.ipynb) | Segmentação de clientes de shopping | Aprendizagem não supervisionada, K-Means, método do cotovelo, silhueta, personas de negócio |
+| [Demo 6](Notebooks/Demo6_Kmeans_Crime_data.ipynb) | Mapa de crimes de Toronto | K-Means sobre coordenadas geográficas, agrupamento espacial, análise exploratória |
 
 A Demo 2 merece um aviso: ela começa com um modelo que acerta 100% e usa esse resultado bom demais para ensinar a reconhecer **vazamento de alvo**, seguindo por que a acurácia engana em base desbalanceada e como precisão e recall se contrapõem.
 
@@ -49,9 +53,11 @@ jupyter notebook
 | Arquivo | Origem | Uso |
 |---|---|---|
 | `url_data.csv` | [Kaggle](https://www.kaggle.com/antonyj453/urldataset) | Demo 1 |
-| `payment_fraud.csv` | [Kaggle](https://www.kaggle.com/pwnpen/payment) | Demo 2 |
+| `payment_fraud.csv` | [Kaggle](https://www.kaggle.com/pwnpen/payment) | Demos 2 e 4 |
+| `Mall_Customers.csv` | [Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) | Demo 5 |
+| `MCI_2014_to_2017.csv` | [Toronto Police Service](https://data.torontopolice.on.ca/search?tags=MCI) | Demo 6 |
 
-A Demo 3 usa o dataset `diabetes`, que já vem com o scikit-learn e não precisa de download.
+A Demo 3 usa o dataset `diabetes`, que já vem com o scikit-learn, e a Demo 3.5 gera a própria série temporal simulada; nenhuma das duas precisa de download.
 
 ## Autor
 
