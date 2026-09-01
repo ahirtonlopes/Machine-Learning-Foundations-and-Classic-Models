@@ -21,7 +21,7 @@ Notebooks/   demos práticas, prontas para rodar no Google Colab
 Slides/      decks das aulas
 ```
 
-> O deck publicado aqui omite figuras de terceiros sujeitas a restrição de redistribuição, então a numeração pode diferir em um ou outro slide da versão apresentada em aula.
+> Os decks publicados aqui podem omitir alguma figura de terceiros sujeita a restrição de redistribuição encontrada durante a revisão, então a numeração pode diferir em um ou outro slide da versão apresentada em aula.
 
 ## Demos
 
