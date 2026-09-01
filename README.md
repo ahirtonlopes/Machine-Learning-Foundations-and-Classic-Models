@@ -34,6 +34,9 @@ Slides/      decks das aulas
 | [Demo 4](Notebooks/Demo4_Fraud_Detection.ipynb) | Classificação de fraude em pagamentos | Aprendizagem supervisionada, regressão logística, árvore de decisão, acurácia, precisão, recall |
 | [Demo 5](Notebooks/Demo5_Kmeans_Mall_Customers.ipynb) | Segmentação de clientes de shopping | Aprendizagem não supervisionada, K-Means, método do cotovelo, silhueta, personas de negócio |
 | [Demo 6](Notebooks/Demo6_Kmeans_Crime_data.ipynb) | Mapa de crimes de Toronto | K-Means sobre coordenadas geográficas, agrupamento espacial, análise exploratória |
+| [Demo 7](Notebooks/Demo7_Q_Learning_Taxi.ipynb) | Táxi do Gymnasium | Reinforcement learning, agente/ambiente/recompensa, Q-learning, Q-table |
+| [Demo 8](Notebooks/Demo8_Q_Learning_FrozenLake.ipynb) | FrozenLake | Q-learning em ambiente estocástico, exploração vs. explotação |
+| [Demo 9](Notebooks/Demo9_Bellman.ipynb) | Equação de Bellman | Valor de estado, recompensa descontada, plano ótimo em grade |
 
 A Demo 2 merece um aviso: ela começa com um modelo que acerta 100% e usa esse resultado bom demais para ensinar a reconhecer **vazamento de alvo**, seguindo por que a acurácia engana em base desbalanceada e como precisão e recall se contrapõem.
 
@@ -57,7 +60,7 @@ jupyter notebook
 | `Mall_Customers.csv` | [Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) | Demo 5 |
 | `MCI_2014_to_2017.csv` | [Toronto Police Service](https://data.torontopolice.on.ca/search?tags=MCI) | Demo 6 |
 
-A Demo 3 usa o dataset `diabetes`, que já vem com o scikit-learn, e a Demo 3.5 gera a própria série temporal simulada; nenhuma das duas precisa de download.
+A Demo 3 usa o dataset `diabetes`, que já vem com o scikit-learn, e a Demo 3.5 gera a própria série temporal simulada; nenhuma das duas precisa de download. As Demos 7 e 8 usam os ambientes `Taxi` e `FrozenLake` da biblioteca [Gymnasium](https://gymnasium.farama.org/); a Demo 9 gera sua própria grade; nenhuma delas precisa de dataset externo. [`Grid_movements_RL.ipynb`](Notebooks/Grid_movements_RL.ipynb) é material de apoio para entender os movimentos em grade usados na Demo 9.
 
 ## Autor
 
