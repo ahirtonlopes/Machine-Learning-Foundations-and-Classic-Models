@@ -4,6 +4,7 @@ Material aberto da disciplina **Machine Learning Foundations & Classic Models**,
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange?style=flat-square&logo=scikit-learn)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-ff6f00?style=flat-square&logo=tensorflow)
 ![Colab](https://img.shields.io/badge/Google-Colab-yellow?style=flat-square&logo=googlecolab)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
@@ -37,8 +38,13 @@ Slides/      decks das aulas
 | [Demo 7](Notebooks/Demo7_Q_Learning_Taxi.ipynb) | Táxi do Gymnasium | Reinforcement learning, agente/ambiente/recompensa, Q-learning, Q-table |
 | [Demo 8](Notebooks/Demo8_Q_Learning_FrozenLake.ipynb) | FrozenLake | Q-learning em ambiente estocástico, exploração vs. explotação |
 | [Demo 9](Notebooks/Demo9_Bellman.ipynb) | Equação de Bellman | Valor de estado, recompensa descontada, plano ótimo em grade |
+| [Demo 10](Notebooks/Demo10_Descida_Gradiente.ipynb) | Descida do gradiente: como um modelo aprende | Função de perda, gradiente, taxa de aprendizado, regressão linear treinada por gradiente, funções de ativação |
+| [Demo 11](Notebooks/Demo11_Perceptron_MLP_XOR.ipynb) | Do perceptron ao MLP: o problema do XOR | Perceptron, separabilidade linear, MLP, backpropagation em NumPy, regressão logística x MLP, Keras, overfitting |
+| [Demo 12](Notebooks/Demo12_Case_Churn_Classicos_vs_MLP.ipynb) | Case de fechamento: churn em telecom | Baseline, regressão logística, árvore, Random Forest, Gradient Boosting x MLP, ROC-AUC, limiar por custo de negócio, importância por permutação |
 
 A Demo 2 merece um aviso: ela começa com um modelo que acerta 100% e usa esse resultado bom demais para ensinar a reconhecer **vazamento de alvo**, seguindo por que a acurácia engana em base desbalanceada e como precisão e recall se contrapõem.
+
+A Demo 12 fecha a disciplina colocando modelos clássicos e uma rede neural no mesmo problema de negócio, com as mesmas regras. Em dado tabular de tamanho médio, o resultado costuma surpreender: a regressão logística empata com os ensembles e fica à frente do MLP.
 
 ## Como rodar
 
@@ -47,7 +53,7 @@ Cada notebook abre direto no Google Colab. A primeira célula de código baixa a
 Para rodar localmente:
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib
+pip install pandas numpy scikit-learn matplotlib tensorflow
 jupyter notebook
 ```
 
@@ -59,8 +65,9 @@ jupyter notebook
 | `payment_fraud.csv` | [Kaggle](https://www.kaggle.com/pwnpen/payment) | Demos 2 e 4 |
 | `Mall_Customers.csv` | [Kaggle](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) | Demo 5 |
 | `MCI_2014_to_2017.csv` | [Toronto Police Service](https://data.torontopolice.on.ca/search?tags=MCI) | Demo 6 |
+| `Telco-Customer-Churn.csv` | [IBM](https://github.com/IBM/telco-customer-churn-on-icp4d) (Apache 2.0) | Demo 12 |
 
-A Demo 3 usa o dataset `diabetes`, que já vem com o scikit-learn, e a Demo 3.5 gera a própria série temporal simulada; nenhuma das duas precisa de download. As Demos 7 e 8 usam os ambientes `Taxi` e `FrozenLake` da biblioteca [Gymnasium](https://gymnasium.farama.org/); a Demo 9 gera sua própria grade; nenhuma delas precisa de dataset externo. [`Grid_movements_RL.ipynb`](Notebooks/Grid_movements_RL.ipynb) é material de apoio para entender os movimentos em grade usados na Demo 9.
+A Demo 3 usa o dataset `diabetes`, que já vem com o scikit-learn, e a Demo 3.5 gera a própria série temporal simulada; nenhuma das duas precisa de download. As Demos 7 e 8 usam os ambientes `Taxi` e `FrozenLake` da biblioteca [Gymnasium](https://gymnasium.farama.org/); a Demo 9 gera sua própria grade; nenhuma delas precisa de dataset externo. As Demos 10 e 11 também geram os próprios dados (sintéticos e `make_moons` do scikit-learn). [`Grid_movements_RL.ipynb`](Notebooks/Grid_movements_RL.ipynb) é material de apoio para entender os movimentos em grade usados na Demo 9.
 
 ## Autor
 
